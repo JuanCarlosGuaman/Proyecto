@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Pages.Usuarios" Title="Usuarios">
+    <ContentPage.Content>
+        <StackLayout Padding="15" Spacing="15" >
+            <Label Text="Registro Usuarios" HorizontalTextAlignment="Center" FontSize="28"
+                 />
+
+            <Label Text="Nombre" FontSize="Medium" />
+            <Entry Placeholder="Ingrese Nombre" TextColor="Black" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" x:Name="lb_nombre" ></Entry>
+
+            <Label Text="Apellido" FontSize="Medium" />
+            <Entry Placeholder="Ingrese Apellido" TextColor="Black" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" x:Name="lb_apellido" ></Entry>
+            <Label Text="Telefono" FontSize="Medium" />
+            <Entry Placeholder="Ingrese Telefono" TextColor="Black" Keyboard="Numeric" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" x:Name="lb_telefono" ></Entry>
+            <Label Text="Direccion" FontSize="Medium" />
+            <Entry Placeholder="Ingrese Direccion" TextColor="Black" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" x:Name="lb_direccion" ></Entry>
+            <Label Text="Correo" FontSize="Medium" />
+            <Entry Placeholder="Ingresar Correo" TextColor="Black" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" x:Name="lb_correo" ></Entry>
+
+            <Button Text="Guardar" CornerRadius="15" Font="Large" FontAttributes="Bold" x:Name="btn_Guardar_Usu" Clicked="btn_Guardar_Usu_Clicked" BackgroundColor="DarkCyan" TextColor="White" ></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

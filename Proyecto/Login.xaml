@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Login">
+    <ContentPage.Content>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Margin="0,10" Source="logo1.jpg" Aspect="AspectFit" HeightRequest="180" WidthRequest="80"></Image>
+            <Frame Grid.Row="1" Margin="0,0,0,-80" BorderColor="#1C375C" HasShadow="True"  CornerRadius="50" HeightRequest="700">
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="20" Padding="20,50,20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                       
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Margin="0,-55,0,0" Text="Formularios" FontSize="20" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+                    <Label Grid.Row="1" Margin="0,-35,0,0" Text="Iniciar Sesión" TextColor="Black"  HorizontalOptions="CenterAndExpand"></Label>
+                    <Entry Grid.Row="2" Placeholder="Usuario" Margin="0,5,0,0" BackgroundColor="#FFA07A" HorizontalOptions="FillAndExpand" TextColor="#1C375C" VerticalOptions="FillAndExpand" x:Name="txtusuario"></Entry>
+                    <Entry Grid.Row="3" Placeholder="Contraseña" IsPassword="True" BackgroundColor="#FFA07A" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="txtcontrasena" ></Entry>
+
+
+                    <Button Grid.Row="4" Text="Ingresar" x:Name="btn_guardar" Clicked="btn_guardar_Clicked" TextColor="White" BackgroundColor="#1C375C" CornerRadius="20" ></Button>
+                    <Button Grid.Row="5" Text="Registrarse" x:Name="btn_registrar" Clicked="btn_registrar_Clicked" TextColor="White" BackgroundColor="#1C375C" CornerRadius="20" ></Button>
+                    <Label Grid.Row="7" Margin="0,-30,0,0" Text="Iniciar sesion con" FontSize="20" FontAttributes="Bold" TextColor="#1C375C" HorizontalOptions="CenterAndExpand"></Label>
+                    
+                    <StackLayout Grid.Row="8" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="40">
+                        <Image Source="logo4" WidthRequest="30"
+                               HeightRequest="30" Aspect="AspectFit"></Image>
+
+                        <Image Source="logo3" WidthRequest="70"
+                               HeightRequest="30" Aspect="AspectFit"></Image>
+                    </StackLayout>
+                    
+                    
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

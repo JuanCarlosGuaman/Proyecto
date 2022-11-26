@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.ViewModels.Camara">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button x:Name="B_Galeri" Text="Abrir Galeria" BackgroundColor="Gold" Clicked="B_Galeri_Clicked"/>
+
+            <Button x:Name="B_Camera" Text="Abrir Camara" BackgroundColor="Gold" Clicked="B_Camera_Clicked"/>
+
+            <Button x:Name="B_Upload" Text="Subir Imagen" BackgroundColor="DarkCyan" Clicked="B_Upload_Clicked"/>
+
+            <Image Source="" x:Name="FileImage" WidthRequest="500" HeightRequest="600"/>
+
+            
+
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

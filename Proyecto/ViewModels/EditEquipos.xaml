@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.ViewModels.EditEquipos">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="10">
+
+                <Label Text="Id Usuario " FontSize="Medium"></Label>
+                <Entry x:Name="t_id" Placeholder="ID" TextColor="Black" Keyboard="Numeric"  IsEnabled="False" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" ></Entry>
+
+                <Label Text="Serie: " FontSize="Medium"></Label>
+                <Entry x:Name="t_serie" Placeholder="Ingrese Serie" TextColor="Black" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" ></Entry>
+
+                <Label Text="Modelo: " FontSize="Medium"></Label>
+                <Entry x:Name="t_modelo" Placeholder="Ingrese Modelo" TextColor="Black" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" ></Entry>
+
+                <Label Text="Teclado: " FontSize="Medium"></Label>
+                <Entry x:Name="t_teclado" Placeholder="Ingrese Teclado" TextColor="Black" FontAttributes="Bold" ></Entry>
+
+                <Label Text="Mouse: " FontSize="Medium"></Label>
+                <Entry x:Name="t_mouse" Placeholder="Ingrese Mouse" TextColor="Black" FontAttributes="Bold" ></Entry>
+
+                
+                <Button Text="Actualizar" CornerRadius="15" Font="Large" FontAttributes="Bold" BackgroundColor="Gold" x:Name="b_update" Clicked="b_update_Clicked"></Button>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

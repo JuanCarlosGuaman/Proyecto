@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Pages.Equipos">
+    <ContentPage.Content>
+        <StackLayout Padding="15" Spacing="15" >
+            <Label Text="Registro de Equipo" FontSize="Large"
+                 />
+
+            <Label Text="Serie" FontSize="Medium" />
+            <Entry Placeholder="Ingrese Serie" TextColor="Black" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" x:Name="lb_serie" ></Entry>
+
+            <Label Text="Modelo" FontSize="Medium" />
+            <Entry Placeholder="Ingrese Modelo" TextColor="Black" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" x:Name="lb_modelo" ></Entry>
+           
+            <Label Text="Teclado" FontSize="Medium" />
+            <Entry Placeholder="Ingrese serie teclado" TextColor="Black" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" x:Name="lb_teclado" ></Entry>
+            <Label Text="mouse" FontSize="Medium" />
+            <Entry Placeholder="Ingrese serie mouse" TextColor="Black" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" x:Name="lb_mouse" ></Entry>
+            
+            <Picker x:Name="Combo_cate" Title="Tipo" SelectedIndexChanged="Combo_cate_SelectedIndexChanged" > </Picker>
+            <Label Text="" x:Name="ID" IsVisible="False"/>
+            
+            <Button Text="Guardar" CornerRadius="15" Font="Large" FontAttributes="Bold" x:Name="btn_Guardar_Equ" Clicked="btn_Guardar_Equ_Clicked" BackgroundColor="DarkCyan" TextColor="White" ></Button>
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

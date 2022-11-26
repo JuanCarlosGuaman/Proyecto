@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Pages.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Formulario de Registro" TextColor="Black" HorizontalTextAlignment="Center" FontSize="28"
+                
+                />
+            
+            <Entry Placeholder="Ingresar Usuario" x:Name="username" >
+
+            </Entry>
+            <Entry Placeholder="Ingresar contrasena" IsPassword="True" x:Name="pass" >
+
+            </Entry>
+            <Button Text="Guardar" x:Name="btn_Guardar" BackgroundColor="Gold" Clicked="btn_Guardar_Clicked" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.ViewModels.EditUsuarios" Title="Actualizar Usuario">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="10">
+
+            <Label Text="Id Usuario " FontSize="Medium"></Label>
+                <Entry x:Name="t_id" Placeholder="ID" TextColor="Black" Keyboard="Numeric"  IsEnabled="False" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" ></Entry>
+
+            <Label Text="Nombre: " FontSize="Medium"></Label>
+            <Entry x:Name="t_nombre" Placeholder="Ingrese Nombre" TextColor="Black" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" ></Entry>
+            
+            <Label Text="Apellido: " FontSize="Medium"></Label>
+            <Entry x:Name="t_apellido" Placeholder="Ingrese Apellido" TextColor="Black" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" ></Entry>
+
+            <Label Text="Telefono: " FontSize="Medium"></Label>
+            <Entry x:Name="t_telefono" Placeholder="Ingrese Telefono" TextColor="Black" FontAttributes="Bold" Keyboard="Numeric" ></Entry>
+                
+            <Label Text="Direccion: " FontSize="Medium"></Label>
+            <Entry x:Name="t_direccion" Placeholder="Ingrese Direccion" TextColor="Black" FontAttributes="Bold" ></Entry>
+
+                <Label Text="Correo: " FontSize="Medium"></Label>
+            <Entry x:Name="t_correo" Placeholder="Ingrese Correo" TextColor="Black" FontAttributes="Bold" ClearButtonVisibility="WhileEditing" ></Entry>
+
+            <Button Text="Actualizar" CornerRadius="15" Font="Large" FontAttributes="Bold" BackgroundColor="Gold" x:Name="b_update" Clicked="b_update_Clicked"></Button>
+
+           </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

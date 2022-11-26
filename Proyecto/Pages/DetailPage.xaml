@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="MENU PRINCIPAL"
+             x:Class="Proyecto.Pages.DetailPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Crear formularios, compártalos, reciba alertas instantáneas y administre eficientemente sus datos con nuestras aplicaciones integradas. Respire profundamente y céntrese en su empresa."
+                  FontSize="Medium" 
+                              
+                                      
+                   />
+            <Image Source="moviles.jpg" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

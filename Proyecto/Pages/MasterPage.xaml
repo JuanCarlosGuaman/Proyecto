@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Proyecto.Pages"
+                         
+             x:Class="Proyecto.Pages.MasterPage"
+             Title="MasterPage">
+   
+        <StackLayout>
+
+        
+
+        <Label Text="Actas de Entrega" FontSize="25" TextColor="Red"></Label>
+        <Button Text="Registro Custodio" x:Name="btn_Usuarios" BackgroundColor="White" Image="add.jpg" Clicked="btn_Usuarios_Clicked" ></Button>
+        
+        <Button Text="Registro Equipo" x:Name="btn_Equipo" BackgroundColor="White" Image="add.jpg" Clicked="btn_Equipo_Clicked" ></Button>
+        <Button Text="Registro Fotografia" x:Name="btn_Foto" BackgroundColor="White" Image="add.jpg" Clicked="btn_Foto_Clicked" ></Button>
+
+        
+        </StackLayout>
+    
+</ContentPage>
